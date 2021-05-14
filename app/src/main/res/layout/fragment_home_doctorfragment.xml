@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.DoctorFragment.HomeDoctorfragment"
+    android:background="@android:color/white">
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/fab"-->
+<!--            android:layout_width="@dimen/_30sdp"-->
+<!--            android:layout_height="@dimen/_30sdp"-->
+<!--            android:layout_gravity="top|end"-->
+<!--            android:layout_margin="@dimen/_12sdp"-->
+<!--            android:background="@drawable/ic_logout"-->
+<!--            android:backgroundTint="@android:color/black"-->
+<!--            />-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/postsRecycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/row_posts" />
+
+                <ImageButton
+                    android:id="@+id/postBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/add_post"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="@dimen/_13sdp"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:text="add post" />
+        </RelativeLayout>
+</FrameLayout>

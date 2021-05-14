@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logintype"
+    tools:context=".ui.LoginTypeActivity">
+
+    <Button
+        android:id="@+id/btn_loginTypeInstructor"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textColor="#212A6B"
+        android:text="Instructor"
+        android:background="@drawable/shape_button_sigin"
+        android:drawableEnd="@drawable/ic_arrow_forward"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="@dimen/_8sdp"
+        android:backgroundTint="#D6E4F0"
+        android:textSize="@dimen/_17ssp"
+        android:textAllCaps="false"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_loginType" />
+
+    <Button
+        android:id="@+id/btn_loginTypeStudent"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Student"
+        android:background="@drawable/shape_button_sigin"
+        android:drawableEnd="@drawable/ic_arrow_forward"
+        android:textSize="@dimen/_17ssp"
+        android:textColor="#212A6B"
+        android:backgroundTint="#D6E4F0"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_loginTypeInstructor" />
+
+    <TextView
+        android:id="@+id/tv_loginType"
+        android:layout_width="201dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="120dp"
+        android:text="Sign in as"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/lato"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="#212A6B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

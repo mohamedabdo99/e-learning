@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/_18sdp"
+    android:layout_margin="@dimen/_12sdp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/et_addSubject_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:hint="subject Name"
+        android:textColor="@android:color/black"
+        android:paddingStart="@dimen/_8sdp"
+        android:textSize="@dimen/_14ssp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_button_sigin"
+        android:backgroundTint="#EFF1F6"
+        android:textColorHint="@android:color/darker_gray"
+        />
+
+    <Button
+        android:id="@+id/btn_addSubject_dialog"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/shape_button_sigin"
+        android:backgroundTint="#EFF1F6"
+        android:text="Add a New Subject"
+        android:textAllCaps="false"
+        android:textColor="#475C8F"
+        android:textSize="@dimen/_15ssp"
+        android:layout_below="@+id/et_addSubject_dialog"
+        android:layout_centerHorizontal="true"
+       />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

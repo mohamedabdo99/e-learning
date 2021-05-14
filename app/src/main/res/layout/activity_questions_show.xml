@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.StudentShowExam.Questions_showActivity"
+    android:background="@drawable/quiz"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/number_OfQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:text="1/10"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Question_tv"
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/shape_radio_groub"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:padding="@dimen/_20sdp"
+            android:text="Question 1"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_radio_groub"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/Answer1_button"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:background="@drawable/shape_button_sigin"
+            android:backgroundTint="#EFF1F6"
+            android:elevation="0dp"
+            android:fontFamily="@font/lato"
+            android:text="Answer 1"
+            android:textAllCaps="false"
+            android:textColor="#475C8F"
+            android:textSize="@dimen/_17ssp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Answer2_button"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:background="@drawable/shape_button_sigin"
+            android:backgroundTint="#EFF1F6"
+            android:elevation="0dp"
+            android:fontFamily="@font/lato"
+            android:text="Answer 2"
+            android:textAllCaps="false"
+            android:textColor="#475C8F"
+            android:textSize="@dimen/_17ssp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Answer3_button"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:background="@drawable/shape_button_sigin"
+            android:backgroundTint="#EFF1F6"
+            android:fontFamily="@font/lato"
+            android:text="Answer 3"
+            android:textAllCaps="false"
+            android:textColor="#475C8F"
+            android:textSize="@dimen/_17ssp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Answer4_button"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginEnd="@dimen/_18sdp"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:background="@drawable/shape_button_sigin"
+            android:backgroundTint="#EFF1F6"
+            android:fontFamily="@font/lato"
+            android:text="Answer 4"
+            android:textAllCaps="false"
+            android:textColor="#475C8F"
+            android:textSize="@dimen/_17ssp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/counter_question"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/round_shape_numberofset_quiz"
+        android:backgroundTint="#475C8F"
+        android:fontFamily="@font/lato"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_25ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/button_previous"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:text="previous"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:text="next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/button_previous"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <Button
+        android:id="@+id/button_submit"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

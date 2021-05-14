@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    tools:context=".ui.DoctorFragment.Chat_Doctor_fragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/groupsRv"
+        android:layout_width="match_parent"
+         android:layout_height="match_parent"
+        android:layout_below="@+id/tool_main"
+        tools:listitem="@layout/row_group_chat_list"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <ImageButton
+            android:id="@+id/create_group_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_grp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

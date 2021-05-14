@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "860676773345",
+    "firebase_url": "https://smart-zu.firebaseio.com",
+    "project_id": "smart-zu",
+    "storage_bucket": "smart-zu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:860676773345:android:86b997a4c584ecbe852ea0",
+        "android_client_info": {
+          "package_name": "com.bin.smart.za"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "860676773345-jgiafimj9j16hp9hkr1jj0ukeoo66v6o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bin.smart.za",
+            "certificate_hash": "9e9f9f9a70835d83d187ca16961ff8e5c9114cdd"
+          }
+        },
+        {
+          "client_id": "860676773345-6r0m867rcros4itnrl6r1keolivk2k46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlk2YCdWNWlSllQhfjHDWMsq0PwxXmVUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "860676773345-6r0m867rcros4itnrl6r1keolivk2k46.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

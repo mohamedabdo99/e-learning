@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DoctorActivity.Group_Create_ActivityDoctor">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/groupIcon"
+        android:src="@drawable/add_grp_chat"
+        android:layout_centerHorizontal="true"
+
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/groupIcon"
+        android:layout_marginTop="28dp"
+        android:padding="10dp"
+        android:hint="Group Title"
+        android:id="@+id/group_title"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="150dp"
+        android:gravity="top"
+        android:layout_below="@+id/group_title"
+        android:id="@+id/group_description"
+        android:inputType="textImeMultiLine|textCapSentences"
+        android:layout_marginTop="28dp"
+        android:padding="10dp"
+        android:hint="Group Description"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_group_btn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/dn_grp_chat"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@android:color/white"
+        />
+
+
+
+</RelativeLayout>

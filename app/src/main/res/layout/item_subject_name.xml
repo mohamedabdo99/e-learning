@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <Button
+        android:id="@+id/subject_one_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subject"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:textColor="#212A6B"
+        android:textSize="@dimen/_16ssp"
+        android:textAllCaps="false"
+        android:background="@drawable/shape_email_sigin"
+        />
+
+
+</RelativeLayout>

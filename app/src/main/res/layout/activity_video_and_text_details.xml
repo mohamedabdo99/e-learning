@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.StudentActivity.VideoAndTextDetails">
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_280sdp"
+        android:id="@+id/exoplayer_id"
+        android:background="@android:color/black"
+        app:resize_mode="fill"
+        android:layout_centerHorizontal="true"
+        app:hide_on_touch="true"
+        app:rewind_increment="10000"
+        app:fastforward_increment="10000"
+        app:use_controller="true"
+        app:player_layout_id="@layout/exo_simple_player_view"
+        app:controller_layout_id="@layout/custom_controller"
+        />
+   <ProgressBar
+       android:id="@+id/progressBar"
+       style="?android:attr/progressBarStyle"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:visibility="visible"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="@dimen/_155sdp"
+       />
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/exoplayer_id"
+        android:layout_marginTop="@dimen/_10sdp">
+        <Button
+            android:id="@+id/btn_show_pdf"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="wrap_content"
+            android:text="View pdf"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_button_sigin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/text_docu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:text="Documentation"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_19ssp"
+            android:layout_below="@+id/btn_show_pdf"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_docu"
+            android:layout_marginTop="@dimen/_8sdp">
+
+            <TextView
+                android:id="@+id/txt_show"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="Text Lecture"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_15ssp"
+                android:padding="@dimen/_10sdp"
+                />
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

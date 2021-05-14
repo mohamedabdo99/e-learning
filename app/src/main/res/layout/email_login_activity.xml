@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+    
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User Name"
+        android:imeOptions="actionNext|flagNoExtractUi"
+        android:focusable="true"
+		android:background="@drawable/shape_zoom"
+		android:padding="@dimen/_10sdp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="30dp" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+		android:background="@drawable/shape_zoom"
+		android:padding="@dimen/_10sdp"
+        android:inputType="textPassword"
+        android:imeOptions="actionNext|flagNoExtractUi"
+        android:focusable="true">
+     </EditText>
+     
+
+     <Button
+         android:id="@+id/btnLogin"
+         android:layout_width="match_parent"
+		 android:layout_margin="@dimen/_20sdp"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:minWidth="100dp"
+		 android:background="@drawable/shape_email_sigin"
+		 android:padding="20dp"
+		 android:textColor="#000"
+         android:text="Login" />
+
+    <LinearLayout
+        android:id="@+id/progressPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+	    <ProgressBar
+	        android:id="@+id/progressBar"
+	        style="?android:attr/progressBarStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"/>
+
+		<TextView
+			android:id="@+id/txtConnecting"
+			android:paddingLeft="5dp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Logining... "/>
+
+	</LinearLayout>
+        
+</LinearLayout>

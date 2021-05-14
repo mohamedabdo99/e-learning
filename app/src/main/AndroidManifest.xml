@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bin.smart.za">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.DoctorActivity.addPostActivity"></activity>
+        <activity android:name=".ui.DoctorActivity.theProfileActivity" />
+        <activity android:name=".ui.DoctorActivity.MyProfileActivity" />
+        <activity android:name=".ui.StudentActivity.ForgetPasswordActivity" />
+        <activity android:name=".ui.PdfShowActivity" />
+        <activity android:name=".ui.DoctorActivity.AddLectureDoctorActivity" />
+        <activity
+            android:name=".ui.StudentActivity.ViewSubject"
+            android:parentActivityName=".ui.StudentActivity.MainActivity" />
+        <activity android:name=".ui.StudentActivity.StudentCourses" />
+        <activity
+            android:name=".ui.DoctorActivity.LoginDoctorActivity"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" />
+        <activity
+            android:name=".ui.LoginTypeActivity"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" />
+        <activity android:name=".ui.McqExamDoctor.QuestionDetailsDoctorActivity" />
+        <activity android:name=".ui.McqExamDoctor.InsertQuestionDoctorActivity" />
+        <activity android:name=".ui.McqExamDoctor.SetsQuizDoctorActivity" />
+        <activity android:name=".ui.StudentShowExam.ShowScoreActivity" />
+        <activity android:name=".ui.StudentShowExam.Questions_showActivity" />
+        <activity android:name=".ui.StudentShowExam.EnterExamStudentActivity" />
+        <activity android:name=".ui.StudentShowExam.SetsNumberOfQuiz" />
+        <activity android:name=".ui.DoctorActivity.AddLectureForSubjectDoctorDetails" />
+        <activity android:name=".ui.DoctorActivity.DetailsDoctorChooesSubjectActivity" />
+        <activity
+            android:name=".ui.DoctorActivity.DoctorAccountActivity"
+            android:theme="@style/App" />
+        <activity
+            android:name=".ui.StudentActivity.VideoAndTextDetails"
+            android:configChanges="orientation|screenSize|layoutDirection" />
+        <activity android:name=".ui.StudentActivity.LectureDetails" />
+        <activity
+            android:name=".ui.StudentActivity.DetailsActivity"
+            android:parentActivityName=".ui.StudentActivity.LoginSuccessful" />
+        <activity
+            android:name=".ui.StudentActivity.LoginSuccessful"
+            android:parentActivityName=".ui.StudentActivity.MainActivity" />
+        <activity
+            android:name=".ui.StudentActivity.RegisterActivity"
+            android:parentActivityName=".ui.StudentActivity.MainActivity" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.StudentActivity.MainActivity"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <activity android:name="us.zoom.sdksample.ui.InitAuthSDKActivity"
+            android:label="@string/app_name"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:screenOrientation="portrait"
+
+            android:theme="@style/App"
+            tools:ignore="MissingClass">
+
+        </activity>
+
+        <activity android:name="us.zoom.sdksample.ui.APIUserStartJoinMeetingActivity"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/App"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="us.zoom.sdksample.ui.LoginUserStartJoinMeetingActivity"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/App"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="us.zoom.sdksample.ui.EmailUserLoginActivity"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/App" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="us.zoom.sdksample.ui.SSOUserLoginActivity"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/App"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="us.zoom.sdksample.otherfeatures.scheduleforloginuser.PreMeetingExampleActivity"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/App"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="us.zoom.sdksample.otherfeatures.scheduleforloginuser.ScheduleMeetingExampleActivity"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/App"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="us.zoom.sdksample.otherfeatures.MyInviteActivity"
+            android:label="@string/invite_acitivity_name"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/App"
+            tools:ignore="MissingClass">
+            <intent-filter>
+                <action android:name="us.zoom.sdkexample.intent.action.MeetingInvite" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="us.zoom.sdksample.otherfeatures.MyWaitJoinActivity"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/App"
+            tools:ignore="MissingClass">
+            <!--            <intent-filter>
+                            <action android:name="us.zoom.sdkexample.intent.action.JoinBeforeHost" />
+                            <category android:name="android.intent.category.DEFAULT" />
+                        </intent-filter>-->
+        </activity>
+
+        <activity android:name="us.zoom.sdksample.otherfeatures.MyCallMeByPhoneActivity"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/App" >
+            <!--            <intent-filter>
+                            <action android:name="us.zoom.sdkexample.intent.action.CallMyPhone" />
+                            <category android:name="android.intent.category.DEFAULT" />
+                        </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name="us.zoom.sdksample.inmeetingfunction.customizedmeetingui.MyMeetingActivity"
+            android:configChanges="screenSize"
+            android:theme="@style/App"
+            android:screenOrientation="portrait"
+            tools:ignore="MissingClass" />
+
+        <activity
+            android:name="us.zoom.sdksample.ui.MeetingSettingActivity"
+            android:configChanges="screenSize"
+            android:theme="@style/App"
+            android:screenOrientation="portrait"
+            tools:ignore="MissingClass" />
+        <activity
+            android:name="us.zoom.sdksample.inmeetingfunction.customizedmeetingui.RawDataMeetingActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+            android:theme="@style/App"
+            android:screenOrientation="portrait"
+            tools:ignore="MissingClass" />
+        <activity android:name="us.zoom.sdksample.ui.QAActivity"
+            tools:ignore="Instantiatable,MissingClass" />
+        <activity android:name="us.zoom.sdksample.ui.BreakoutRoomsAdminActivity"
+            android:configChanges="screenSize"
+            android:theme="@style/App"
+            android:screenOrientation="portrait"
+            tools:ignore="Instantiatable,MissingClass" />
+        <activity android:name="us.zoom.sdksample.ui.BoEditActivity"
+            android:configChanges="screenSize"
+            android:theme="@style/App"
+            android:screenOrientation="portrait"
+            tools:ignore="Instantiatable,MissingClass" />
+        <activity
+            android:name="us.zoom.sdksample.inmeetingfunction.zoommeetingui.CustomZoomUIActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="false"
+            android:theme="@style/App"
+            tools:ignore="Instantiatable,MissingClass" />
+    </application>
+
+</manifest>

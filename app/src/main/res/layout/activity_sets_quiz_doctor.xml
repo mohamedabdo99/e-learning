@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.McqExamDoctor.SetsQuizDoctorActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolPr_doctor_Set"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#EFF1F6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_exam_NSet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:padding="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolPr_doctor_Set"
+        app:layout_constraintBottom_toTopOf="@+id/add_newSet_exam"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/add_newSet_exam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/shape_button_sigin"
+        android:backgroundTint="#EFF1F6"
+        android:text="Add a new Set"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_17ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@+id/recycle_exam_NSet" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Smart ZU</string>
+    //Login Activity
+    <string name="email_signIn">Email</string>
+    <string name="password_signIn">Password</string>
+    <string name="signIn">Sign in</string>
+    <string name="forgetPassword">Forget Password ?</string>
+    <string name="Donthaveanaccount">Dont Have account ? Sign up </string>
+    <string name="toolparlogin">Login</string>
+    <string name="Emailisrequired">Email is required</string>
+    <string name="passwordisrequired">password is required</string>
+    <string name="SigninSuccessful">Sign in  Successful</string>
+    <string name="Signinfailed">Sign in  failed </string>
+
+
+    //Register Activity
+    <string name="FullName">Full Name</string>
+    <string name="code">university Code</string>
+    <string name="university">University</string>
+    <string name="faculty">Faculty</string>
+    <string name="department">Department</string>
+    <string name="phoneNunber">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="signUp">Sign Up</string>
+    <string name="toolparregister">Register</string>
+    <string name="PleaseEnterYourName">Please Enter Your name </string>
+    <string name="PleaseEnterYourUniversity">Please Enter Your university </string>
+    <string name="PleaseEnterYourfaculty">Please Enter Your faculty </string>
+    <string name="PleaseEnterYourcode">Please Enter Your university code  </string>
+    <string name="PleaseEnterYourdepartment">Please Enter Your department </string>
+    <string name="PleaseEnterYourphoneNumber">Please Enter Your phoneNumber  </string>
+    <string name="PleaseEnterYourpassword">Please Enter Your password </string>
+    <string name="PleaseEnterYourconfirmPassword">Please Enter Your confirm Password  </string>
+    <string name="PleaseEnterYourEmail">Please Enter Your Email  </string>
+    <string name="passwordmustcontaina8characters">password must contain a 8 characters  </string>
+    <string name="UserhasbeenregisterSuccessful">User has been register Successful  </string>
+    <string name="Failedtoregister">Failed to register  </string>
+    <string name="Failedtocreateaccount">Failed to create account   </string>
+    <string name="theyarenotthesame">they are not the same   </string>
+    <string name="waitwhencheck">wait when check   </string>
+    <string name="wait">wait</string>
+
+    //HomePage
+    <string name="toolparhome">Home page</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //zoom
+
+    <string name="invite_acitivity_name">Meeting Invite Example</string>
+
+    <string name="zm_rc_using_fingers_for_remote_control">Remotely control a desktop using gestures</string>
+    <string name="zm_rc_one_finger_tap">Tap with one finger</string>
+    <string name="zm_rc_one_finger_tap_description">Tap the screen with one finger to click the mouse</string>
+    <string name="zm_rc_one_finger_double_taps">Double tap with one finger</string>
+    <string name="zm_rc_one_finger_double_taps_description">Double tap with one finger to double click the mouse</string>
+    <string name="zm_rc_one_long_tap">Long press with one finger</string>
+    <string name="zm_rc_one_long_tap_description">Press the screen with one finger to right-click the mouse</string>
+    <string name="zm_rc_two_fingers_scroll">Swipe with two fingers</string>
+    <string name="zm_rc_two_fingers_scroll_description">Swipe with two fingers to scroll up and down</string>
+    <string name="zm_rc_two_fingers_pinch">Pinch with two fingers</string>
+    <string name="zm_rc_two_fingers_pinch_description">Pinch in and out with two fingers to zoom in and out</string>
+    <string name="zm_rc_mouse_icon">Mouse icon</string>
+    <string name="zm_rc_mouse_icon_description">Drag the mouse icon to move the remote mouse pointer</string>
+    <string name="zm_rc_tap_notice">Tap here to control %s\'s screen remotely</string>
+
+    <string name="alert_other_is_sharing">You cannot start screen share while the other participant is sharing.</string>
+
+    <string name="settings_custom_ui">Customized UI</string>
+    <string name="settings_video_source">External Video Source</string>
+    <string name="settings_switch_domain">Switch domain</string>
+    <string name="settings_hide_screen_share_toolbar_annotation">Hide annotation button in screen share</string>
+    <string name="settings_hide_screen_share_toolbar_stopshare">Hide stopshare button in screen share</string>
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DoctorFragment.AddExame_fragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolPr_doctor_addExam"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#EFF1F6" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_exam_NCategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolPr_doctor_addExam"
+        android:padding="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_15sdp"
+        android:layout_above="@+id/add_newSubject_exam"
+        />
+
+    <Button
+        android:id="@+id/add_newSubject_exam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_alignParentBottom="true"
+        android:text="Add a new Subject"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_17ssp"
+        android:textStyle="bold"
+        android:background="@drawable/shape_button_sigin"
+        android:backgroundTint="#EFF1F6"
+        />
+</RelativeLayout>
+</FrameLayout>

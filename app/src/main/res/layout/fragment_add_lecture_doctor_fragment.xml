@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DoctorFragment.AddLecture_doctor_fragment">
+    <RelativeLayout
+        android:id="@+id/relative_addLectureDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+        <TextView
+            android:id="@+id/tv_choose_grade_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolPar_home"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Choose Grade Doctor"
+            android:textColor="#212A6B"
+            android:textSize="@dimen/_20ssp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_secondLevel_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_choose_grade_doctor"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/shape_button_loginsuccessfuly"
+            android:text="Second Level"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="#212A6B"
+            android:textStyle="normal" />
+        <RadioGroup
+            android:id="@+id/rg_addLecture"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_forthLevel_doctor"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/shape_radio_groub"
+            android:layout_centerHorizontal="true"
+            android:padding="@dimen/_8sdp"
+            >
+            <RadioButton
+                android:id="@+id/radio_firstTirm_dotor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Term "
+                android:textColor="#212A6B"
+                android:textSize="@dimen/_14ssp"
+                android:checked="true"
+                android:padding="@dimen/_10sdp"
+                />
+            <RadioButton
+                android:id="@+id/radio_secondTirm_doctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="second Term "
+                android:textColor="#212A6B"
+                android:textSize="@dimen/_14ssp"
+                android:padding="@dimen/_8sdp"
+                />
+
+        </RadioGroup>
+        <Button
+            android:id="@+id/btn_thirdLevel_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_secondLevel_doctor"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/shape_button_loginsuccessfuly"
+            android:text="Third Level"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="normal"
+            android:textColor="#212A6B"
+            />
+
+        <Button
+            android:id="@+id/btn_forthLevel_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_thirdLevel_doctor"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/shape_button_loginsuccessfuly"
+            android:text="Fourth Level"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="normal"
+            android:textColor="#212A6B"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<group android:checkableBehavior="single">
+
+<item android:id="@+id/menu_createMeeting"
+    android:title="Course Selection"
+    android:orderInCategory="100"
+    app:showAsAction="never"
+    android:iconTint="@android:color/black"
+    android:icon="@drawable/ic_selection"/>
+
+    <item android:id="@+id/menu_joinMeeting"
+        android:title="Student Course"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:iconTint="@android:color/black"
+        android:icon="@drawable/ic_course_view"
+        />
+    <item android:id="@+id/menu_chat"
+        android:title="Meeting"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:iconTint="@android:color/black"
+        android:icon="@drawable/ic__videocam_meeting"/>
+    <item android:id="@+id/menu_exam"
+        android:title="Quiz"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:iconTint="@android:color/black"
+        android:icon="@drawable/ic_exam_menu"/>
+    <item android:id="@+id/menu_Logout"
+        android:title="LogOut"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:iconTint="@android:color/black"
+        android:icon="@drawable/ic_logout"/>
+</group>
+</menu>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_3sdp"
+    app:cardElevation="@dimen/_3sdp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/person_add"/>
+
+
+            <LinearLayout
+                android:id="@+id/profileLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/unameTv"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_18ssp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/PTimeTv"
+                    android:text="33 min"
+                    android:textStyle="bold"
+                    />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="bold"
+            android:id="@+id/pTitleTv"
+            android:minHeight="@dimen/_50sdp"
+            android:text="Share with your students"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Comment"
+                android:textAllCaps="false"
+                android:id="@+id/commentBtn"
+                android:background="@color/white"
+                android:drawablePadding="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:drawableLeft="@drawable/ic_chat"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

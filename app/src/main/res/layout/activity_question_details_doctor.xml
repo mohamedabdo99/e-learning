@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.McqExamDoctor.QuestionDetailsDoctorActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/details_toolpar_doctorQu"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/black"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/details_toolpar_doctorQu"
+        >
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        >
+    <EditText
+        android:id="@+id/et_enterQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:textAllCaps="false"
+        android:hint="Question"
+        android:paddingStart="@dimen/_16sdp"
+        android:textColorHint="@android:color/black"
+        android:textSize="@dimen/_14ssp"
+        android:background="@drawable/shape_email_sigin"
+        />
+    <EditText
+        android:id="@+id/et_enterAnswerA"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:textAllCaps="false"
+        android:hint="Answer A"
+        android:layout_below="@+id/et_enterQuestion"
+        android:paddingStart="@dimen/_16sdp"
+        android:textColorHint="@android:color/black"
+        android:textSize="@dimen/_14ssp"
+        android:background="@drawable/shape_email_sigin"
+        android:singleLine="true"
+        />
+    <EditText
+        android:id="@+id/et_enterAnswerB"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:textAllCaps="false"
+        android:hint="Answer B"
+        android:layout_below="@+id/et_enterAnswerA"
+        android:paddingStart="@dimen/_16sdp"
+        android:textColorHint="@android:color/black"
+        android:textSize="@dimen/_14ssp"
+        android:background="@drawable/shape_email_sigin"
+        android:singleLine="true"
+
+        />
+    <EditText
+        android:id="@+id/et_enterAnswerC"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:textAllCaps="false"
+        android:hint="Answer C"
+        android:layout_below="@+id/et_enterAnswerB"
+        android:paddingStart="@dimen/_16sdp"
+        android:textColorHint="@android:color/black"
+        android:textSize="@dimen/_14ssp"
+        android:background="@drawable/shape_email_sigin"
+        android:singleLine="true"
+        />
+    <EditText
+        android:id="@+id/et_enterAnswerD"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/et_enterAnswerC"
+        android:hint="Answer D"
+        android:paddingStart="@dimen/_16sdp"
+        android:textColorHint="@android:color/black"
+        android:textSize="@dimen/_14ssp"
+        android:background="@drawable/shape_email_sigin"
+        android:singleLine="true"
+        />
+    <EditText
+        android:id="@+id/et_enterCorrectAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:textAllCaps="false"
+        android:hint="Correct Answer"
+        android:layout_below="@+id/et_enterAnswerD"
+        android:paddingStart="@dimen/_16sdp"
+        android:textColorHint="@android:color/black"
+        android:textSize="@dimen/_14ssp"
+        android:inputType="text"
+        android:background="@drawable/shape_email_sigin"
+        />
+        <EditText
+            android:id="@+id/et_enterDegreeAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:textAllCaps="false"
+            android:hint="mark Answer"
+            android:layout_below="@+id/et_enterCorrectAnswer"
+            android:paddingStart="@dimen/_16sdp"
+            android:textColorHint="@android:color/black"
+            android:textSize="@dimen/_14ssp"
+            android:inputType="number"
+            android:background="@drawable/shape_email_sigin"
+            />
+
+
+    <Button
+        android:id="@+id/add_Question_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_enterDegreeAnswer"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:background="@drawable/shape_edit_button"
+        android:textSize="@dimen/_15ssp"
+        android:text="add question"
+        android:textAllCaps="false"
+        />
+
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

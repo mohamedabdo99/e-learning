@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_home"
+            android:title="Home"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+            android:iconTint="@android:color/black"
+            android:icon="@drawable/ic_home"/>
+
+        <item
+            android:id="@+id/menu_createMeetingDoctor"
+            android:title="Create meeting"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+            android:iconTint="@android:color/black"
+            android:icon="@drawable/ic__videocam_meeting"/>
+
+        <item
+            android:id="@+id/add_lectureDoctor"
+            android:title="add lecture"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+            android:iconTint="@android:color/black"
+            android:icon="@drawable/ic_add_lecture"/>
+
+        <item
+            android:id="@+id/add_examDoctor"
+            android:title="add exam"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+            android:iconTint="@android:color/black"
+            android:icon="@drawable/ic_add_exame"/>
+
+        <item
+            android:id="@+id/menu_chatDoctor"
+            android:title="Logout"
+            android:orderInCategory="100"
+            app:showAsAction="never"
+            android:iconTint="@android:color/black"
+            android:icon="@drawable/ic_logout"/>
+    </group>
+</menu>

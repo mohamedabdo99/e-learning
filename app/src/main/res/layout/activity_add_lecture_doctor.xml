@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DoctorActivity.AddLectureDoctorActivity">
+
+
+    <EditText
+        android:id="@+id/tv_documentation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Documentation"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/_14ssp"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/btn_choseVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Video"
+        android:layout_below="@+id/tv_documentation"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_addLecture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_choseVideo"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+
+    <EditText
+            android:id="@+id/txt_pdfName"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter pdf file name :"
+            />
+        <Button
+            android:id="@+id/btn_upload_pdf"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/txt_pdfName"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content"
+            android:text="choose pdf"
+            android:background="@color/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/Add_lecture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_upload_pdf"
+        android:text="submit"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15ssp"
+        android:layout_margin="@dimen/_20sdp"/>
+
+        <!--
+           -->
+</RelativeLayout>

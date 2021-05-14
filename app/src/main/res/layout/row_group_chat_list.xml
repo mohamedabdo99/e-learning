@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    android:padding="@dimen/_3sdp"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_margin="@dimen/_10sdp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/add_grp_chat"
+            android:id="@+id/group_Icon_Iv"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_toEndOf="@+id/group_Icon_Iv"
+            android:id="@+id/group_title"
+            android:text="Group Title"
+            android:textSize="@dimen/_20ssp"
+            android:padding="@dimen/_5sdp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/group_title"
+            android:id="@+id/nameTv"
+            android:text="Sender Name:"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_toEndOf="@id/group_Icon_Iv"
+            android:textSize="@dimen/_17ssp"
+            android:padding="@dimen/_5sdp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/messageTv"
+            android:layout_toEndOf="@id/nameTv"
+            android:layout_below="@id/group_title"
+            android:singleLine="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="The Message"
+            android:textSize="@dimen/_17ssp"
+            android:padding="@dimen/_5sdp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeTv"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/nameTv"
+            android:singleLine="true"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:text="12:12 PM"
+            android:textSize="@dimen/_17ssp"
+            android:padding="@dimen/_5sdp"
+            />
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

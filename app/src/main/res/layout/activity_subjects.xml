@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.StudentActivity.StudentCourses">
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Material registration"
+        android:textColor="#DD2C3269"
+        android:textSize="@dimen/_20sdp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_text"
+        android:layout_margin="20dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/digital_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_button_sigin"
+            android:backgroundTint="@android:color/darker_gray"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:text="Digital Image Processing"
+
+
+            android:textSize="@dimen/_10sdp" />
+
+        <CheckBox
+            android:id="@+id/Computer_Graphics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_button_sigin"
+            android:backgroundTint="@android:color/darker_gray"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:text="Computer Graphics"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/Artificial_Intelligence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_button_sigin"
+            android:backgroundTint="@android:color/darker_gray"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:text="Artificial Intelligence"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/Functional_Analysis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_button_sigin"
+            android:backgroundTint="@android:color/darker_gray"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:text="Functional Analysis"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/Introduction_To_Partial_Differential_Equations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_button_sigin"
+            android:backgroundTint="@android:color/darker_gray"
+            android:paddingStart="15dp"
+            android:paddingLeft="15dp"
+            android:text="Introduction To Partial Differential Equations"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/Complex_Variable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@drawable/shape_button_sigin"
+            android:backgroundTint="@android:color/darker_gray"
+            android:paddingStart="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_15sdp"
+            android:text="Complex Variable"
+            android:textSize="@dimen/_15sdp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:background="#DD2C3269"
+        android:text="Save"
+        android:textColor="#fff"
+        android:textSize="@dimen/_15ssp" />
+
+
+</RelativeLayout>

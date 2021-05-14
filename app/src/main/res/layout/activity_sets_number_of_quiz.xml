@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.StudentShowExam.SetsNumberOfQuiz">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolPar_setNumberQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@android:color/black"
+        />
+
+    <GridView
+        android:id="@+id/grid_setNumberQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="@dimen/_100sdp"
+        android:numColumns="auto_fit"
+        android:horizontalSpacing="@dimen/_15sdp"
+        android:verticalSpacing="@dimen/_18sdp"
+        android:layout_below="@+id/toolPar_setNumberQuiz"
+        />
+</RelativeLayout>
